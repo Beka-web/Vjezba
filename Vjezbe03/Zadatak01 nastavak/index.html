@@ -1,0 +1,54 @@
+<!--Napravite identičan zadatak kao Zadatak 1, koji će parametre slati metodom post
+• Definirajte obrazac tako da se računske operacije prikazuju u padajućem izborniku
+• Definirajte obrazac tako da se računska operacija nudi kao radiobutton opcija. 
+  Svaka radiobutton opcija mora imati pripadajuću labelu.-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kalkulator</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rebeka Risek">
+    <meta name="keywords" content="Kalkulator, računanje, brojevi">
+</head>
+
+<body>
+    <form action="http://www.fulek.com/ALGEBRA/SUPIT/Kalkulator" method="POST">
+        <fieldset>
+            <legend><b>Kalkulator</b></legend>
+            <label>
+                Broj A:
+                <input type="text" id="A" name="a" />
+            </label>
+            <br />
+            <label>
+                Broj B:
+                <input type="text" id="B" name="b" />
+            </label>
+            <br />
+            <label>Računska operacija</label>
+            <br />
+            <!--ako treba biti u padajućem izborniku, možda mi tu fali select, probala sam ali mi nije uspjelo da je padajući nego doda kućicu sa strelicom prema dolje i kraj toga kružić-->
+            <label for="rb+">+</label>
+            <input type="radio" id="rb+" name="Opcija A" value="+">
+            <br />
+            <label for="rb-">-</label>
+            <input type="radio" id="rb-" name="Opcija B" value="-">
+            <br />
+            <label for="rb*">*</label>
+            <input type="radio" id="rb*" name="Opcija B" value="*">
+            <br />
+            <label for="rb/">/</label>
+            <input type="radio" id="rb/" name="Opcija B" value="/">
+            <br />
+            <br />
+            <label>
+                <input type="submit" value="Izračunaj" />
+            </label>
+        </fieldset>
+    </form>
+</body>
+
+</html>
