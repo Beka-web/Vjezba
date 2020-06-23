@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Zadatak 3</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rebeka Risek">
+    <meta name="keywords" content="registracija, sign up, sing in">
+</head>
+
+<body>
+    <form action="http://www.fulek.com/ALGEBRA/SUPIT/Prijava" method="POST"> <!--koja tu ide metoda-->
+        <fieldset>
+            <legend>Ime i prezime</legend>
+            <table border="0" width="110px" cellspacing="5px" cellpading="5px">
+                <colgroup>
+                    <col width="10px">
+                    <col width="100px">
+                </colgroup>
+                <tr align="left">
+                    <td>
+                        <label for="Ime">Ime:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" id="Ime" name="ime">
+                    </td>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <label for="Prezime">Prezime:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" id="Prezime" name="prezime">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Email koji će Vam ujedno biti i korisničko ime</legend>
+            <table border="0" width="300px" cellspacing="5px" cellpading="5px">
+                <colgroup>
+                    <col width="100px">
+                    <col width="100px">
+                </colgroup>
+                <tr align="left">
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" id="email" name="email">
+                    </td>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <label for="Ponovite email">Ponovite email:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" id="Ponovite email" name="email">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Željena lozinka</legend>
+            <table border="0" width="335px" cellspacing="5px" cellpading="5px">
+                <colgroup>
+                    <col width="100px">
+                    <col width="100px">
+                </colgroup>
+                <tr align="left">
+                    <td>
+                        <label for="Lozinka">Lozinka:</label>
+                    </td>
+                    <td align="left">
+                        <input type="password" id="Lozinka" name="lozinka">
+                    </td>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <label for="PonovljenaLozinka">Ponovite lozinku:</label>
+                    </td>
+                    <td align="left">
+                        <input type="password" id="PonovljenaLozinka" name="lozinka">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Spol</legend>
+            <label for="Ženski">Ženski</label>
+            <input type="radio" id="Ženski" name="spol">
+            <label for="Muški">Muški</label>
+            <input type="radio" id="Muški" name="spol">
+        </fieldset>
+        <br />
+        <label for="država">Država:</label>
+        <select id="država" name="država">
+            <option selected>Hrvatska</option>
+        </select>
+        <br />
+        <br />
+        <fieldset>
+            <legend>Vrsta pretplate</legend>
+            <label for="jednogodišnja">Jednogodišnja pretplata</label>
+            <input type="radio" id="jednogodišnja" name="pretplata">
+            <input type="radio" id="dvogodišnja" name="pretplata">
+            <label for="dvogodišnja">Dvogodišnja pretplata</label>
+        </fieldset>
+        <br />
+        <label for="komentar">Komentar:</label>
+        <br />
+        <textarea id="komentar" name="komentar" rows="4" cols="70"></textarea>
+        <br />
+        <br />
+        <label for="interes">Naznačite područja interesa:</label>
+        <br />
+        <select id="interes" name="interes" multiple size="4"> <!--kako raširiti taj prozor? i kako omogućiti izbor više od jedne opcije-->
+            <option>Sport</option>
+            <option>Glazba</option>
+            <option>Politika</option>
+            <option>Književnost</option>
+        </select>
+        <br/>
+        <br/>
+        <input type="checkbox" id="uvjeti" name="uvjeti">
+        <lable for="uvjeti">Prihvaćam uvjete i potvrđujem da su upisani podaci istiniti</lable>
+        <br/>
+        <br/>
+        <input type="submit" value="Prihvati">
+        <input type="submit" value="Resetiraj obrazac">
+</body>
+
+</html>
