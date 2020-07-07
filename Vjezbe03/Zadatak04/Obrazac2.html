@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Obrazac 2/3</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rebeka Risek">
+    <meta name="keywords" content="osobni podaci, ime, prezime, e-mail, datum rođenja">
+</head>
+
+<body>
+    <form action="file:///D:/Rebeka/Repozitorij/Vjezbe03/Zadatak04/Obrazac3.html" method="POST">
+        <fieldset>
+            <legend>Podaci o prebivalištu 2/3
+                <progress value="2" max="3"></progress>
+            </legend>
+            <table border="0" width="300px" cellspacing="5px" cellpading="10px">
+                <colgroup>
+                    <col width="100px">
+                    <col width="100px">
+
+                </colgroup>
+                <tr>
+                    <td>
+                        <label for="ulica">Ulica:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="ulica" name="Adresa">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="broj">Broj:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="broj" name="Adresa">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="grad">Grad:</label>
+                    </td>
+                    <td>
+                        <select id="grad" name="Adresa">
+                            <option selected>Zagreb</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nekretnina">Nekretnina:</label>
+                    </td>
+                    <td>
+                        <label for="vlasništvo">Vlasništvo</label>
+                        <input type="radio" id="vlasništvo" name="nekretnina">
+                        <label for="najam">Najam</label>
+                        <input type="radio" id="najam" name="nekretnina">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="broj stanara">Br. Stanara</label>
+                    </td>
+                    <td>
+                        <input type="number" id="broj stanara" name="brojstanara" value="" min="1" max="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Dalje>">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+</body>
+
+</html>
