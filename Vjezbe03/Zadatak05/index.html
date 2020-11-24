@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Zadatak05</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Rebeka Risek">
+        <meta name="keywords" content="osobni podaci, ime, prezime, e-mail, datum rođenja, najdraža boja">
+    </head>
+    
+<body>
+    <form action="http://www.fulek.com/ALGEBRA/SUPIT/HTML5Forms1" method="GET">
+    <table border="0" frame="hsides" rules="rows" width="590px" cellspacing="10px" cellpading="20px">
+        <colgroup>
+            <col width="110px">
+            <col width="170px">
+        </colgroup>
+        <tr>
+            <td>
+                <label for="ime">Ime:</label>
+            </td>
+            <td>
+                <input type="text" id="ime" name="osoba" placeholder="Upišite ime..." required autofocus>
+            </td>
+            <td rowspan="8">
+                <img src="assets/html5.png"></img>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="prezime">Prezime:</label>
+            </td>
+            <td>
+                <input type="text" id="prezime" name="osoba" placeholder="Upišite prezime..." required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="adresa">Adresa:</label>
+            </td>
+            <td>
+               <input type="text" id="adresa" name="adresa" placeholder="Adresa..." required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="KucniBroj">Kućni Broj:</label>
+            </td>
+            <td>
+               <input type="text" id="KucniBroj" name="adresa" autocomplete="on" value="1" required> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">E-mail:</label>
+            </td>
+            <td>
+               <input type="email" id="email" name="email" placeholder="Upišite e-mail" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="DatumRodjenja">Datum rođenja:</label>
+            </td>
+            <td>
+               <input type="date" id="DatumRodjenja" name="osoba" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="OmiljenaBoja">Omiljena boja:</label>
+            </td>
+            <td>
+               <input type="color" id="OmiljenaBoja" name="interes" required>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Pošalji">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+
+
+</html>
